@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?attr/bg_main">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="?attr/bg_main">
+        <RelativeLayout
+            android:id="@+id/message_top_rl"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_alignParentTop="true"
+            android:background="?attr/bg_main">
+
+            <ImageView
+                android:id="@+id/administration_iv"
+                android:layout_width="50dp"
+                android:layout_height="match_parent"
+                android:layout_alignParentLeft="true"
+                android:src="@drawable/mail_more"
+                android:padding="10dp"
+                android:gravity="center"/>
+
+            <TextView
+                android:id="@+id/mail_box_name_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="?attr/font_text_color"
+                android:gravity="center"
+                android:layout_centerInParent="true"/>
+
+            <ImageView
+                android:id="@+id/mail_new_iv"
+                android:layout_width="50dp"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:gravity="center"
+                android:src="@drawable/mail_new"
+                android:padding="10dp"/>
+
+            <ImageView
+                android:id="@+id/search_mail_iv"
+                android:layout_width="50dp"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:src="@drawable/mail_search"
+                android:layout_toLeftOf="@id/mail_new_iv"
+                android:padding="10dp"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="@color/line_bg"
+                android:layout_alignParentBottom="true"/>
+
+        </RelativeLayout>
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/message_rv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/message_top_rl">
+
+        </android.support.v7.widget.RecyclerView>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/left_rl"
+        android:layout_width="240dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="left"
+        android:orientation="vertical"
+        android:background="?attr/bg_main">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:text="邮箱类型"
+            android:gravity="center_vertical"
+            android:paddingLeft="16dp"
+            android:textSize="@dimen/fontsize_20sp"
+            android:textColor="@color/font_night_white"/>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/line_bg"
+            android:layout_alignParentBottom="true"/>
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/mail_box_rv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        </android.support.v7.widget.RecyclerView>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/line_bg"
+            android:layout_alignParentBottom="true"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:text="邮箱账户"
+            android:gravity="center_vertical"
+            android:paddingLeft="16dp"
+            android:textSize="@dimen/fontsize_20sp"
+            android:textColor="@color/font_night_white"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/line_bg"
+            android:layout_alignParentBottom="true"/>
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/mail_user_rv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        </android.support.v7.widget.RecyclerView>
+
+    </LinearLayout>
+
+</android.support.v4.widget.DrawerLayout>

@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?attr/bg_main">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+
+        <RelativeLayout
+            android:id="@+id/radio_bottom_rl"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:background="?attr/bg_main"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentStart="true">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="@color/line_bg"
+                android:layout_alignParentTop="true"/>
+
+            <RadioGroup
+                android:id="@+id/bottom_rg"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:gravity="center_vertical">
+
+                <RadioButton
+                    android:id="@+id/message_rb"
+                    style="@style/RadioButtonStyle"
+                    android:text="邮件"
+                    android:checked="true"
+                    android:drawableTop="@drawable/selector_msg_icon"/>
+
+                <RadioButton
+                    android:id="@+id/agency_rb"
+                    style="@style/RadioButtonStyle"
+                    android:text="代办"
+                    android:drawableTop="@drawable/selector_agency_icon"/>
+
+                <RadioButton
+                    android:id="@+id/contacts_rb"
+                    style="@style/RadioButtonStyle"
+                    android:text="通讯录"
+                    android:drawableTop="@drawable/selector_contacts_icon"/>
+
+                <RadioButton
+                    android:id="@+id/me_rb"
+                    style="@style/RadioButtonStyle"
+                    android:text="我"
+                    android:drawableTop="@drawable/selector_me_icon"/>
+
+            </RadioGroup>
+
+
+        </RelativeLayout>
+
+        <FrameLayout
+            android:id="@+id/content_fl"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@id/radio_bottom_rl">
+
+        </FrameLayout>
+
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

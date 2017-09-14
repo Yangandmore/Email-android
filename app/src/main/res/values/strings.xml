@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">MyEmailDome</string>
+    <string name="setting">设置</string>
+    <string name="email">Email</string>
+    <string name="login">登录</string>
+    <string name="password">密 码:</string>
+    <string name="email_name">邮 箱:</string>
+</resources>

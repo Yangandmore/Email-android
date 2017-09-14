@@ -1,0 +1,60 @@
+<resources>
+
+    <!--Theme-->
+    <!-- 白天模式 -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="android:windowIsTranslucent">true</item>
+    </style>
+    <style name="ThemeLight" parent="AppTheme">
+        <item name="bg_main" >@color/background</item>
+        <item name="font_text_color">@color/font_theme</item>
+    </style>
+
+    <!-- 夜间模式 -->
+    <style name="AppNightTheme" parent="Theme.AppCompat.DayNight.NoActionBar">
+        <item name="android:windowIsTranslucent">true</item>
+    </style>
+    <style name="ThemeNight" parent="AppNightTheme">
+        <item name="bg_main">@color/night_background</item>
+        <item name="font_text_color">@color/font_night_white</item>
+    </style>
+
+    <!--View-->
+    <!--登录输入框-->
+    <style name="EditTextStyle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:textColor">?attr/font_text_color</item>
+        <item name="android:background">@drawable/shape_login_edittext_bg</item>
+        <item name="android:textCursorDrawable">@drawable/color_cursor</item>
+        <item name="android:paddingLeft">3dp</item>
+        <item name="android:paddingRight">3dp</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:singleLine">true</item>
+    </style>
+
+
+    <!--清除按钮-->
+    <style name="ClearImageStyle">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:src">@drawable/clear_text</item>
+        <item name="android:onClick">onClear</item>
+        <item name="android:paddingRight">10dp</item>
+        <item name="android:layout_alignParentRight">true</item>
+    </style>
+
+    <!--主页面RadioButton-->
+    <style name="RadioButtonStyle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:gravity">center</item>
+        <item name="android:padding">5dp</item>
+        <item name="android:button">@null</item>
+        <item name="android:textColor">@drawable/selector_radiobutton_tvbg</item>
+        <item name="android:textSize">@dimen/fontsize_10sp</item>
+    </style>
+
+</resources>

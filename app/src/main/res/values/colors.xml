@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="background">#edf0f0</color>
+    <color name="night_background">#3C3F41</color>
+
+    <!-- 主题色，蓝 -->
+    <color name="theme_color">#0DA7E7</color>
+    <!-- 主题色，夜，蓝 -->
+    <color name="night_theme_color">#004275</color>
+    <!--纯黑-->
+    <color name="black">#000</color>
+    <!-- 内容分割线 -->
+    <color name="line_bg">#c5c5c5</color>
+
+    <!-- 字体 -->
+    <color name="font_theme">#323232</color>
+    <color name="font_white">#fff</color>
+    <color name="font_night_white">#9C9C9C</color>
+    <color name="font_gray_white">#BBBBBB</color>
+
+
+</resources>
